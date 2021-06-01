@@ -1,0 +1,141 @@
+* {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    display: none;
+  }
+  .bg-img-top {
+    top: -50%;
+    left: 10%;
+  }
+
+  .bg-img-btm {
+    bottom: -50%;
+    right: 10%;
+  }
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+  position: relative;
+}
+
+.bg-img-top {
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  z-index: -1;
+}
+
+.bg-img-btm {
+  position: absolute;
+  bottom: -50%;
+  right: -20%;
+  z-index: -1;
+}
+
+p {
+  margin: 5px;
+  padding: 0;
+}
+
+.main-card {
+  background-color: white;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 200px;
+}
+
+.card-content {
+  height: 75%;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.black-border {
+  border-top: 2px lightgray solid;
+}
+
+.bottom {
+  height: 25%;
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+}
+
+.font-big {
+  font-weight: 700;
+}
+
+.font-small {
+  font-weight: 400;
+  color: gray;
+}
+
+.font-size-small {
+  font-size: 15px;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.float {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card-top {
+  height: 50%;
+}
+
+.card-btm {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-top-img {
+  background: url(/images/bg-pattern-card.svg) center no-repeat;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.img-round {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.img-center {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
+}
+
+.btm-card {
+  padding: 20px;
+}
